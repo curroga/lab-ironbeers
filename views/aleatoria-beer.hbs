@@ -5,18 +5,7 @@
     {{#each responseFromApi}}
 
         
-          <div>
-            <img src="{{this.image_url}}" alt="" width="50px">
-          </div> 
-          <div>
-            {{this.name}}
-          </div> 
-          <div> 
-            {{this.description}}
-          </div> 
-          <div>
-            {{this.tagline}}
-          </div>
+          {{>beerpartial this}}
           <div>
             <ul>Food Paring
               {{#each this.food_pairing}}
