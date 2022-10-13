@@ -56,7 +56,7 @@ app.get("/beers/:id", (req, res) => {
   let {id} = req.params
   punkAPI.getBeer(id)
   .then(beersFromApi => {
-    console.log(beersFromApi)
+    //console.log(beersFromApi)
     res.render("all-beers.hbs", {
       beersFromApi
     })
